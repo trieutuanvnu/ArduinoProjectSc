@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.huylong.project_43.StatusActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rlSensor1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/color1">
+
+            <TextView
+                android:id="@+id/tvSensor1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Sensor 1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSensor1Temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="0"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/tvSensor1Humid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="180dp"
+                android:text="0"
+                android:textSize="36sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSensor2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rlSensor1"
+            android:background="@color/color2">
+
+            <TextView
+                android:id="@+id/tvSensor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Sensor 2"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSensor2Temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="0"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/tvSensor2Humid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="180dp"
+                android:text="0"
+                android:textSize="36sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/color1"
+            android:layout_below="@+id/rlSensor2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/tvLamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lamp"
+                android:textSize="24sp"
+                android:layout_alignBaseline="@+id/tvFan"
+                android:layout_alignBottom="@+id/tvFan"
+                android:layout_alignRight="@+id/tbtnLamp"
+                android:layout_alignEnd="@+id/tbtnLamp"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/tvFan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fan"
+                android:textSize="24sp"
+                android:layout_marginRight="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_above="@+id/tbtnFan"
+                android:layout_alignRight="@+id/tbtnFan"
+                android:layout_alignEnd="@+id/tbtnFan" />
+
+            <ToggleButton
+                android:id="@+id/tbtnLamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tbtnFan"
+                android:layout_alignBottom="@+id/tbtnFan"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="57dp"
+                android:layout_marginRight="57dp"
+                android:text="ToggleButton"
+                android:textOff="OFF"
+                android:textOn="ON" />
+
+            <ToggleButton
+                android:id="@+id/tbtnFan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginStart="58dp"
+                android:checked="false"
+                android:text="ToggleButton"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlThreshold"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rlButton"
+            android:background="@color/color2">
+
+            <Spinner
+                android:id="@+id/spHumidMax"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/spTempMax"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp" />
+
+            <Spinner
+                android:id="@+id/spHumidMin"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/spHumidMax"
+                android:layout_toLeftOf="@+id/spHumidMax"
+                android:layout_toStartOf="@+id/spHumidMax"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp" />
+
+            <Spinner
+                android:id="@+id/spTempMax"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_alignTop="@+id/spTempMin"
+                android:layout_toRightOf="@+id/spTempMin"
+                android:layout_toEndOf="@+id/spTempMin" />
+
+            <Spinner
+                android:id="@+id/spTempMin"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="Tmin"
+                android:textSize="20sp"
+                android:layout_above="@+id/spTempMin"
+                android:layout_alignLeft="@+id/spTempMin"
+                android:layout_alignStart="@+id/spTempMin" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/spTempMax"
+                android:layout_alignLeft="@+id/spTempMax"
+                android:layout_alignStart="@+id/spTempMax"
+                android:text="Tmax"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/spHumidMin"
+                android:layout_alignLeft="@+id/spHumidMin"
+                android:layout_alignStart="@+id/spHumidMin"
+                android:text="Hmin"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/spHumidMax"
+                android:layout_alignLeft="@+id/spHumidMax"
+                android:layout_alignStart="@+id/spHumidMax"
+                android:text="Hmax"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:text="Logout"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
