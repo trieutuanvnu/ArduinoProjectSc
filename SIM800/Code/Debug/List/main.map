@@ -1,0 +1,83 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+send_tel_number                                                                   0x01EB      14
+send_msg                                                                          0x01F9      30
+rcvd_tel_number                                                                   0x0217      15
+rcvd_msg                                                                          0x0226      50
+mq2_count                                                                         0x0258       1
+timer1_count                                                                      0x0259       1
+rl1_status                                                                        0x025A       1
+rl2_status                                                                        0x025B       1
+rl3_status                                                                        0x025C       1
+buzz_status                                                                       0x025D       1
+rl3_enable                                                                        0x025E       1
+buzz_enable                                                                       0x025F       1
+rl1_str                                                                           0x0260       5
+rl2_str                                                                           0x0265       4
+rl3_str                                                                           0x0269       4
+buzz_str                                                                          0x026D       4
+on_str                                                                            0x0271       3
+off_str                                                                           0x0274       4
+en_str                                                                            0x0278       3
+dis_str                                                                           0x027B       4
+mq2_sms_sent_count                                                                0x027F       2
+ir_sms_sent_count                                                                 0x0281       2
+rx_buffer                                                                         0x0283     100
+rx_wr_index                                                                       0x02E7       1
+rx_rd_index                                                                       0x02E8       1
+rx_counter                                                                        0x02E9       1
+p_S1010026000                                                                     0x02EA       2
+_base_y                                                                           0x02EC       4
+_lcd_x                                                                            0x02F0       1
+_lcd_y                                                                            0x02F1       1
+_lcd_maxx                                                                         0x02F2       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+rcvdCheck                                                                         R5           1
+rcvdConf                                                                          R4           1
+rcvdEnd                                                                           R7           1
+max_mq2_adc                                                                       R8,R9        2
+mq2_adc                                                                           R10,R11      2
+ir_status                                                                         R6           1
+mq2_detected                                                                      R13          1
+start_measure                                                                     R12          1
+rx_buffer_overflow                                                                R2.0      1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+SIM800A_SMSsetup                                                                  0x00149     13
+SIM800A_sendSMS                                                                   0x00156     27
+hasString                                                                         0x00171     17
+clearBuffer                                                                       0x00182     39
+bufferExecute                                                                     0x001A9    224
+usart_rx_isr                                                                      0x00289    123
+timer1_ovf_isr                                                                    0x00304     71
+read_adc                                                                          0x0034B     14
+main                                                                              0x00359    399
+putchar                                                                           0x004E8      7
+put_usart_G100                                                                    0x004EF     10
+put_buff_G100                                                                     0x004F9     56
+_print_G100                                                                       0x00531    308
+sprintf                                                                           0x00665     46
+printf                                                                            0x00693     31
+strlen                                                                            0x006B2     12
+strlenf                                                                           0x006BE     13
+strpbrkf                                                                          0x006CB     23
+strstr                                                                            0x006E2     23
+strspnf                                                                           0x006F9     21
+strtok                                                                            0x0070E     66
+_lcd_write_nibble_G102                                                            0x00750     37
+_lcd_write_data                                                                   0x00775     12
+lcd_gotoxy                                                                        0x00781     17
+lcd_clear                                                                         0x00792     14
+lcd_putchar                                                                       0x007A0     32
+lcd_puts                                                                          0x007C0     17
+lcd_init                                                                          0x007D1     48
